@@ -13,4 +13,4 @@ for i in A:
         b=i
     if c>b and c!=a:
         b=c
-print(a*b
+print(a*b)
