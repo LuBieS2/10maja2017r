@@ -1,11 +1,21 @@
+file = open("dane.txt", "r")
+numbers = list(map(str.strip, file.readlines()))
+numbers = [item.split(" ") for item in numbers]
+numbersn = [item for l in numbers for item in l]
+numbersn = list(map(int, numbersn))
 
-def licz(x):
-    if x==1:
-        return 1
-    else:
-        w=licz(int(x/2))
-        if x%2==1:
-            return w+1
-        else:
-            return w-1
-print(licz(135))
+niggest = 255
+whittest = 0
+for i in numbersn:
+    if i > whittest:
+        whittest = i
+    if i < niggest:
+        niggest = i
+print(niggest, whittest)
+print(numbers[0])
+chuj = len(numbers[0])
+kurwa = 0
+for column in numbers:
+    for number in column:
+        if column[(number)]
+print(kurwa)
